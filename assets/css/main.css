@@ -111,12 +111,12 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 400;
-		color: #483949;
+		color: #fff;
 		line-height: 1.25em;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-		color: inherit;
+		color: #fff;
 		text-decoration: none;
 		border-bottom-color: transparent;
 	}
@@ -1767,6 +1767,7 @@ input, select, textarea {
 		header > p {
 			display: block;
 			font-size: 1.5em;
+			color: #fff;
 			margin: 1em 0 2em 0;
 			line-height: 1.5em;
 			text-align: inherit;
@@ -2176,11 +2177,11 @@ input, select, textarea {
 
 	#header {
 		position: relative;
-		background-image: url("../../images/header.jpg");
+		background-image: url("../../images/header.png");
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
-		color: #fff;
+		color: #000000;
 		text-align: center;
 		padding: 7.5em 0 2em 0;
 		cursor: default;
@@ -2408,7 +2409,6 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background: #fff;
 		text-align: center;
 		padding: 4.5em 0 4.5em 0;
 		margin-bottom: 0;
