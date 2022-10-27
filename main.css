@@ -1,23 +1,20 @@
 	#header {
 		position: relative;
 		background-image: url("images/header.jpg");
-		background-size: cover;
-		background-position: center center;
+		background-size: 100%;
+		background-position: center;
 		background-attachment: fixed;
 		color: #000000;
 		text-align: center;
-		padding: 7.5em 0 26em 0;
+		padding: 7.5em 0 40em 0;
 		cursor: default;
 
 	}
+	
 
 
 		#header .inner {
-			position: relative;
-			z-index: 1;
-			margin: 0;
 			display: inline-block;
-			vertical-align: middle;
 		}
 
 
@@ -25,7 +22,7 @@
 
 
 			#header h1 {
-				color: white;
+				color: whitesmoke;
 
 			}
 
@@ -38,75 +35,16 @@
 		}
 
 
-.hello {
-  opacity: 1 !important;
+#gallery {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+	padding: 10px;
 }
-.full {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-.full .content {
-  background-color: rgba(0,0,0,0.75) !important;
-  height: 100%;
-  width: 100%;
-  display: grid;
-}
-.full .content img {
-  left: 50%;
-  transform: translate3d(0, 0, 0);
- 
-  max-height: 800px;
-  margin: auto;
-}
-.byebye {
-  opacity: 0;
-}
-.byebye:hover {
-  transform: scale(0.2) !important;
-}
-.gallery {
-  display: grid;
-  grid-column-gap: 8px;
-  grid-row-gap: 8px;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-  grid-auto-rows: 8px;
-}
-.gallery img {
-  max-width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 0 16px #333;
-}
-.gallery img:hover {
-  box-shadow: 0 0 32px #333;
-}
-.gallery .contentPort {
-  padding: 4px;
-}
-.gallery .contentLand {
-  padding: 4px;
-}
-.gallery .gallery-item {
-  transition: grid-row-start 300ms linear;
-  transition: transform 300ms ease;
-  transition: all 0.5s ease;
-  cursor: pointer;
-}
-.gallery .gallery-item:hover {
-  transform: scale(1.025);
-}
-@media (max-width: 600px) {
-  .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
-  }
-}
-@media (max-width: 400px) {
-  .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
-  }
+
+#gallery img {
+	width: 100%;
+	height: auto;
 }
 
 
